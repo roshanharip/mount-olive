@@ -1,0 +1,318 @@
+body{
+    background-color:black;
+    color: aliceblue;
+    position: relative;
+    background-image: url('/static/images/mount3.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    font-family: 'Aldrich';
+    height: max-content;
+    overflow-x: hidden !important;
+}
+header{
+    padding:0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid orange;
+}
+div.container1{
+    display: inline-block;
+    margin-left: 2px;
+}
+div.container1 img{
+    height: 13vh;
+    width: 13vh;
+    display: inline-block;
+}
+div.container2{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+}
+div.container2 span.head{
+    font-size: 6vh;
+    width: 9vh;
+    display: inline;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+    margin: auto;
+    padding: auto;
+    color: olive;
+    line-height: normal;
+    position: relative;
+}
+div.container2 span.subhead{
+    font-size: 4vh;
+    color: rgb(68, 51, 11);
+}
+nav{
+    width: 100%;
+    text-align: center;
+}
+nav ul.main{
+    margin: 10px;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+div.navbar{
+    display: flex;
+    justify-content: center;
+}
+div.navbar a.main{
+    text-decoration: none;
+    color: rgb(110, 42, 13);
+}
+div.navbar li.main{
+    list-style-type: none;
+    padding: 4px;
+    display: inline-block;
+}
+div.navbar li.contact{
+    border-right: none!important;
+}
+div.navbar li.main:hover{
+    background-color: rgb(246, 224, 83);
+    border-radius: 10px;
+    font-size: large;
+}
+article.aboutus{
+    top:400px;
+    left: 200px;
+    border-radius:10px;
+    height:max-content;
+    padding:10px;
+    overflow:hidden;
+    width:30%;
+    position: absolute;
+    background-color: white;
+    opacity: 1;
+    color: black;
+}
+article.aboutus div.aboutus-title{
+    background-image: url('/static/images/rib.png');
+    padding-bottom:5px;
+    background-repeat: repeat-y;
+    background-position:center ;
+    text-align: center;
+    color: white;
+}
+article.aboutus div.aboutus-content{
+    text-align: justify;
+    text-justify: inter-word;
+}
+div.content3{
+    position: absolute;
+    display: inline;
+    top: 24.3rem;
+    right: 5rem;
+}
+div.content3 img{
+    width:200px;
+    height:225px;
+    margin: 5px;
+}
+input.checkinput{
+    display: none;
+}
+nav ul.subabout a{
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+
+}
+nav ul.subabout li{
+    list-style-type: none;
+    border-top: 2px solid ;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+nav ul.subabout{
+    padding: 0;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+nav ul.main li.about{
+    margin: 5px;
+}
+nav ul.subabout a.aboutlist:hover{
+    
+    color: rgb(18, 17, 17);
+}
+
+@media only screen and (max-width:858px){
+    body{
+        height: 100vh;
+    }
+    .menu-container {
+        display: block;
+        cursor: pointer;
+        height: 100%;
+        background-color: transparent;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    label.menubar{
+        margin: auto;
+        padding-right: 5px;
+    }
+    input.checkinput {
+        display: none;
+    }
+    .bar1,.bar2,.bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+        border-radius: 3px;
+    }
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+    div.container1 img{
+        width: 11vh;
+        height: 11vh;
+        float: left;
+    }
+    div.container2{
+        float: left;
+    }
+    div.container2 span.head{
+        color: white;
+        font-weight: bolder;
+        font-size: 3vh;
+    }
+    div.container2 span.subhead{
+        font-size: 2vh;
+        color:white;
+    }
+    header{
+        background-color: olive;
+        
+        width: 100%;
+        top:0;
+    }
+    div.navbar {
+        position: relative;
+        display: none;
+        width: 100%;
+        height: 100%;
+        transition: all .5s;
+
+    }
+    .navbar nav{
+        height:100%;
+        background-color: rgb(158, 161, 114);
+        margin:0;
+        padding: 0;
+    }
+    nav ul.main{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+
+    }
+    nav ul.main div.list{
+        margin-top: 0;
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+    nav ul.main div.list li.main{
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        border-bottom: 2px solid rgb(100, 100, 100);
+        display: flex;
+    }
+    nav ul.main li.contact {
+        border: none !important;;
+    }
+    nav ul.main li.main a.main{
+        color:white !important;
+    }
+    nav ul.main li.main:hover{
+        background-color: rgb(228, 230, 204);
+        color:black;
+    }
+    article.aboutus{
+        display: block;
+        font-size: medium;
+        position: relative;
+        top:2rem;
+        left: 0;
+        right: 0;
+        width: 90%;
+        padding: 5px;
+        margin: auto;
+    }
+    article.aboutus .aboutus-content{
+        padding: 1rem;
+        line-height: 20px;
+    }
+    div.content3{
+        position: static;
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+    }
+    div.content3 div.img{
+        text-align: center;
+        margin-top: 6rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        height: fit-content;
+        margin-right :auto;
+        margin-left: auto;
+    }
+    div.content3 img{
+        width:45%;
+        height: 45%;
+        border-radius: 10px;
+        margin: auto;
+    }
+}

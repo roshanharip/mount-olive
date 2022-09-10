@@ -1,0 +1,53 @@
+div.container{
+    width:100%
+}
+fieldset{
+    width: 70%;
+    border: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    opacity: 0.9;
+    border-radius: 5px;
+    flex-direction: column;
+    margin:auto;
+}
+button {
+    color:#ffffff;
+    background-color: rgb(67, 67, 255);
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+button:hover{
+    background-color: gold;
+    color: rgb(249, 249, 252);
+    font-size: medium;
+}
+input {
+    border-radius: 10px;
+    border: 1px solid orange;
+}
+label {
+    color: olive;
+    font-weight: bold;
+}
+textarea{
+    display: block;
+    margin: auto;
+    border-radius:7px;
+}
+label[for="message"]{
+    display: block;
+}
+@media (min-width:787px) {
+    textarea{
+        display: block;
+    }
+    fieldset{
+        width: max-content;
+    }
+    
+}

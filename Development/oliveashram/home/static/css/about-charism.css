@@ -1,0 +1,55 @@
+section.charismcontent{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+article.charismcontent{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    color: rgb(108, 81, 21);
+    margin: auto;
+}
+article.charismcontent div.charismimg img{
+    height: 570px;
+    width: 600px;
+}
+article.charismcontent div.charismcontain{
+    background-color: white;
+    padding: 40px;
+    margin: 40px;
+    padding-top: 5px !important;
+    margin-top: 0 !important;
+}
+article.charismcontent div.charismcontain p{
+   text-align: justify;
+   text-justify: inter-word;
+}
+.typewriter {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 2s steps(30, end),
+      blink-caret .5s  ;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 10% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+    100%{border-color: transparent}
+  }
