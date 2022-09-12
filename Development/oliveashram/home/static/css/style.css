@@ -8,7 +8,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Aldrich';
-    height: max-content;
+    height: fit-content;
     overflow-x: hidden !important;
 }
 header{
@@ -122,13 +122,13 @@ div.content3 img{
 input.checkinput{
     display: none;
 }
-nav ul.subabout a{
+nav ul.subabout a, nav ul.submission a{
     text-decoration: none;
     text-align: center;
     color: #ffffff;
 
 }
-nav ul.subabout li{
+nav ul.subabout li, nav ul.submission li{
     list-style-type: none;
     border-top: 2px solid ;
     width: 100%;
@@ -137,7 +137,7 @@ nav ul.subabout li{
     align-items: center;
     text-align: center;
 }
-nav ul.subabout{
+nav ul.subabout, nav ul.submission{
     padding: 0;
     border-radius: 10px;
     width: 100%;
@@ -147,12 +147,15 @@ nav ul.subabout{
     justify-items: center;
     align-items: center;
 }
-nav ul.main li.about{
+nav ul.main li.about, nav ul.main li.mission {
     margin: 5px;
 }
-nav ul.subabout a.aboutlist:hover{
+nav ul.subabout a.aboutlist:hover, nav ul.submission a.missionlist:hover{
     
     color: rgb(18, 17, 17);
+}
+nav ul.main div.missionmaindiv{
+    height: max-content;
 }
 
 @media only screen and (max-width:858px){

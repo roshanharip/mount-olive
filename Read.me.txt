@@ -1,0 +1,8 @@
+Development - 
+	oliveashram - 
+		right click and open in Terminal- 
+			type or paste -  python manage.py runserver
+				Open Chrome Browser in url box type(in top of homepage) - http://127.0.0.1:8000/
+					**************************************************************************
+for close - 
+	open minimized terminal and press Ctrl+C and close the terminal

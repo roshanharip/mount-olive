@@ -1,0 +1,65 @@
+div.mission{
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+}
+div.divmainmission{
+    background-image: linear-gradient(to right, #ff9933,olive);
+    border-radius: 20px;
+    width : 80%;
+    margin: auto ;
+    height: max-content;
+}
+div.divmainmission h1.headingmission {
+    background: linear-gradient(white,white,white,white,yellow,yellow,yellow   );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10px !important;
+    margin: 0;
+    padding: 0;
+}
+div.divmainmission section.missionsection{
+    color: white;
+    padding: 0 20px;
+}
+div.divmainmission article.articlemission{
+    padding: 0 90px;
+    margin: 0;
+}
+article.articlemission p{
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: Acme!important;
+}
+section.missionsection article.articlemission h1{
+    font-size: 30px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: yellow;
+}
+section.missionsection article.articlemission img{
+    border-radius: 20px;
+    width:250px;
+    height: 200px;
+}
+section.missionsection article.articlemission p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+section.missionsection  article.articlemission div.flexcontent{
+    display: flex;
+    flex-direction: row;
+}
+section.missionsection  article.articlemission div.flexcontent2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+section.missionsection  article.articlemission div.flexcontent div:nth-child(2), section.missionsection  article.articlemission div.flexcontent2 div:nth-child(2){
+    padding: 0 40px;
+}

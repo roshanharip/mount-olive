@@ -1,0 +1,38 @@
+div.mainvision{
+    height: 567px;
+    bottom: 0;
+}
+section.mainsection{
+    width: 100%;
+    margin: auto;
+}
+section.mainsection h1{
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    color: blueviolet;
+}
+article.mainarticle{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+article.mainarticle div{
+    margin: auto;
+    display: inline-block;
+    width: 40%;
+}
+article.mainarticle p{
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 25px;
+    color:rgb(4, 4, 119);
+}
+article.mainarticle img{
+    height :400px;
+    margin: auto;
+    width: 500px;
+    image-resolution: 1000dpi;
+}

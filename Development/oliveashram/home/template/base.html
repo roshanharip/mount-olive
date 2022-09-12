@@ -38,20 +38,27 @@
             <ul class="main">
                 <div class="list">
                     <li class="main"><a href="/index" class="main">Home</a></li>
-                    <div style=" display:inline-block" class="aboutmaindiv" id="aboutmaindiv"
-                        onmouseover="myAboutIn(this)" onmouseout="myAboutOut(this)">
+                    <div style=" display:inline-block" class="aboutmaindiv" id="aboutmaindiv">
                         <li class="main"><a href="" class="main about">About</a>
                             <div style="display:none;" class="aboutsubdiv" id="aboutsubdiv">
                                 <ul class="subabout" id="subabout">
-                                    <li><a href="/about-history" class="aboutlist">History</a></li>
-                                    <li><a href="/about-charism" class="aboutlist">Charism</a></li>
-                                    <li><a href="/about-founder" class="aboutlist">Founder</a></li>
-                                    <li><a href="/about-members" class="aboutlist">Members</a></li>
+                                    <li><a href="/about/history" class="aboutlist">History</a></li>
+                                    <li><a href="/about/charism" class="aboutlist">Charism</a></li>
+                                    <li><a href="/about/founder" class="aboutlist">Founder</a></li>
+                                    <li><a href="/about/members" class="aboutlist">Members</a></li>
                                 </ul>
                             </div>
                         </li>
                     </div>
-                    <li class="main"><a href="/mission" class="main">Mission</a></li>
+                    <div style=" display:inline-block" class="missionmaindiv" id="missionmaindiv">
+                        <li class="main"><a href="/mission" class="main mission">Mission</a>
+                            <div style="display:none;" class="missionsubdiv" id="missionsubdiv">
+                                <ul class="submission" id="submission">
+                                    <li><a href="/mission/vision" class="missionlist">Vision</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </div>
                     <li class="main"><a href="/news" class="main">News</a></li>
                     <li class="main"><a href="/services" class="main">Services</a></li>
                     <li class="contact main"><a href="/contact" class="main">Contact</a></li>
@@ -68,23 +75,27 @@
         }
     </script>
     <script>
-        document.getElementById(
-            "aboutmaindiv").addEventListener(
-                "mouseover", over);
+        document.getElementById("aboutmaindiv").addEventListener("mouseover", overAbout);
+        document.getElementById("missionmaindiv").addEventListener("mouseover", overMission);
+        document.getElementById("aboutmaindiv").addEventListener("mouseout", outAbout);
+        document.getElementById("missionmaindiv").addEventListener("mouseout", outMission);
 
-        document.getElementById(
-            "aboutmaindiv").addEventListener(
-                "mouseout", out);
 
-        function over() {
-            document.getElementById(
-                "aboutsubdiv").style.display = "block";
+        function overAbout() {
+            document.getElementById("aboutsubdiv").style.display = "block";
         }
 
-        function out() {
-            document.getElementById(
-                "aboutsubdiv").style.display = "none";
+        function outAbout() {
+            document.getElementById("aboutsubdiv").style.display = "none";
         }
+        function overMission() {
+            document.getElementById("missionsubdiv").style.display = "block";
+        }
+
+        function outMission() {
+            document.getElementById("missionsubdiv").style.display = "none";
+        }
+
     </script>
     {% block body%}{% endblock body %}
 </body>

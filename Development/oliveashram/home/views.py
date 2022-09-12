@@ -22,3 +22,5 @@ def founder(request):
     return render(request,'about-founder.html')
 def members(request):
     return render(request,'about-members.html')
+def vision(request):
+    return render(request,'mission-vision.html')    
